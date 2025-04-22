@@ -1178,8 +1178,7 @@ func main(){
 	case msg2 := <- ch2: // If ch2 is ready (after 4 seconds), print its message
 		fmt.Println(msg2)
 
-	case <- time.After(5 * time.Second): // Timeout after 5 seconds
-		// If no channel is ready within 5 seconds, print this message
+	case <- time.After(5 * time.Second): // Timeout after 5 seconds. If no channel is ready within 5 seconds, print this message
 		fmt.Println("No communication is ready to receive")
 	}
 }
