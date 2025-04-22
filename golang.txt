@@ -1,0 +1,40 @@
+-> Golang : Golang is a programming language developed by Google in 2007 and released to the public as an open-source project in 2009. It was designed with a focus on simplicity, efficiency and ease of use.
+
+-> Conciseness & Simplicity : Go has a clean and simple syntax, making it easy to read and write code. It avoids unnecessary features and complexity, making it a great language for developers who prefer straightforward and efficient code.
+
+-> Efficiency : Go is designed to be fast and efficient. It compiles directly to machine code and has a garbage collector, making it suitable for building high performance applications. It's commonly used in projects where low latency and high throughput is crucial.
+
+-> Concurrency : Go has built-in support for concurrent programming. Goroutines, lightweight threads managed by the Go runtime, make it easy to write concurrent code. The language also provides channels for communication between goroutines, simplifying the coordination of concurrent tasks.
+
+-> Standard Library : Go comes with a powerful standard library that includes packages for networking, file I/O, testing and more. This reduces the need for external dependencies, making it easier to build robust applications with minimal third-party dependencies.
+
+-> Cross-Platform Compatibility : Go is designed to be cross-platform, allowing us to write code on one OS and easily compile and run it on another without modification.
+
+-> Scalability : Go is used by many large-scale projects and companies, including Google, Dropbox, and Uber. Its design facilitates scalability and makes it well-suited for building complex and distributed systems.
+
+--------------------------------------------------------------
+
+-> Create Go Setup
+
+- First creating the file with .go extension.
+- Then in the terminal run the following command "go mod init first". It'll create a "go.mod" file.
+
+--------------------------------------------------------------
+
+-> Package Declaration : Every Go file begins with a package declaration, indicating the package to which the file belongs. Packages are a way of organizing code in Go, and they play a crucial role in managing dependencies and code organization.
+
+package  main
+
+The main package is special and is the entry point for the executable programs. Packages are often named after the directory they are in, but its not a strict requirement.
+
+-> Import Statements : After the package declaration, we import other packages that our program depends on. This is typically done using the import statement.
+
+import "fmt"
+
+The fmt package is commonly used for formatting and printing.
+
+-> Main Function : The main function is the entry point for executable programs in Go. It is where the execution of the program begins.
+
+func main(){
+    // write the code here
+}
